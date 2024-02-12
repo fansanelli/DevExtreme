@@ -125,10 +125,10 @@ export class DxMapComponent extends DxComponent implements OnDestroy, OnChanges,
     
      */
     @Input()
-    get center(): string | Array<number | { lat?: number, lng?: number }> {
+    get center(): string | Array<number> | { lat?: number, lng?: number } {
         return this._getOption('center');
     }
-    set center(value: string | Array<number | { lat?: number, lng?: number }>) {
+    set center(value: string | Array<number> | { lat?: number, lng?: number }) {
         this._setOption('center', value);
     }
 
